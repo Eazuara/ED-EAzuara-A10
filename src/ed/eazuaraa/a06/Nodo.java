@@ -9,25 +9,25 @@ package ed.eazuaraa.a06;
  *
  * @author eazuara
  */
-public class Nodo {
-    int data;
+public class Nodo <T>  {
+    /*T data;
     Nodo next;
 
-    public Nodo() {
-        data=0;
+    public Nodo(T data) {
+        
         next=null;
     }
 
-    public Nodo(int data, Nodo next) {
+    public Nodo(T data, Nodo next) {
         this.data = data;
         this.next = next;
     }
 
-    public int getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(T data) {
         this.data = data;
     }
 
@@ -38,7 +38,17 @@ public class Nodo {
     public void setNext(Nodo next) {
         this.next = next;
     }
-    
+    */
+        T data;
+    Nodo next;
+    Nodo prev;
+    public Nodo(T data)
+    {
+        this.data=data;
+        next = null;
+        prev = null;
+    }
+}
    
     
-}
+
